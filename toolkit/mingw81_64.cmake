@@ -1,0 +1,11 @@
+# Qt custum set
+set(CMAKE_C_COMPILER    "D:/Program/Qt/Tools/mingw810_64/bin/gcc.exe")
+set(CMAKE_CXX_COMPILER  "D:/Program/Qt/Tools/mingw810_64/bin/g++.exe")
+set(CMAKE_PREFIX_PATH   "D:/Program/Qt/5.15.2/mingw81_64")
+set(CMAKE_SYSROOT       "D:/Program/Qt/5.15.2/mingw81_64")
+set(QT_DIR              "D:/Program/Qt/5.15.2/mingw81_64/lib/cmake/Qt5")
+set(QT_QMAKE_EXECUTABLE "D:/Program/Qt/5.15.2/mingw81_64/bin/qmake.exe")
+set(Qt5Core_DIR         "D:/Program/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Core")
+set(Qt5_DIR             "D:/Program/Qt/5.15.2/mingw81_64/lib/cmake/Qt5")
+set(Qt5Gui_DIR          "D:/Program/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui")
+set(Qt5Widgets_DIR      "D:/Program/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets")
