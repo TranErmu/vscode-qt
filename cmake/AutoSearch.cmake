@@ -12,8 +12,9 @@ macro(FIND_INCLUDE_DIR result root_path)                                        
             endif()                                                             #结束判断
         endif()
     endforeach()                                                                #结束for循环
-    set(${result} ${dirlist})                                                   #dirlist结果放入result变量中
-endmacro()
+    # set(${result} ${dirlist})                                                   #dirlist结果放入result变量中
+    list(APPEND ${result} ${file_lists})                                        #file_lists结果添加到result变量中
+    endmacro()
 
 ############################################################
 # 查找路径下的所有源文件
@@ -29,7 +30,8 @@ macro(FIND_SRC_FILE result dir_lists)               #定义函数,2个参数:存
                 "${dir}/*.qrc")
         list(APPEND file_lists ${src_file})         #遍历获取{dir_lists}中源文件
     endforeach()                                    #结束for循环
-    set(${result} ${file_lists})                    #file_lists结果放入result变量中
+    # set(${result} ${file_lists})
+    list(APPEND ${result} ${file_lists})            #file_lists结果添加到result变量中
 endmacro()
 
 

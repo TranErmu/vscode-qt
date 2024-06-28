@@ -39,6 +39,7 @@ link_directories(${PROJECT_SOURCE_DIR}/lib)
 # add source code
 # set(SRC_DIR ${CMAKE_CURRENT_LIST_DIR}/src)
 FIND_SRC_FILE(SRCS ${CMAKE_CURRENT_LIST_DIR}/src)
+FIND_SRC_FILE(SRCS ${CMAKE_CURRENT_LIST_DIR}/qrc)
 
 LOG_INFO("source files:")
 foreach(file ${SRCS})
